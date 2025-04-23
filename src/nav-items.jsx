@@ -10,6 +10,7 @@ const CurrencyPairAnalysis = lazy(() => import("./pages/CurrencyPairAnalysis"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const HeatmapDashboard = lazy(() => import("./pages/HeatmapDashboard"));
 const AdminRates = lazy(() => import("./pages/AdminRates"));
+import Recipients from "./pages/Recipients";
 
 export const navItems = [
   {
@@ -51,7 +52,12 @@ export const navItems = [
     title: "",
     to: "/currency-pair/:pairs",
     page: <CurrencyPairAnalysis />
-  }
+  },
+  {
+    title: "Recipients",
+    to: "/recipients",
+    page: <Recipients />
+  },
 ];
 
 // Add a route that won't show in navigation
